@@ -20,7 +20,6 @@ for(i = 0; i < Math.floor(data/2); i++) {
 console.log(checkPalindrome('radar'));
 
 
-
 const checkPalindrome2 = (string) => {
   let lowerCase = string.toLowerCase();
   let reverseString = lowerCase.split('').reverse('').join('');
@@ -40,11 +39,15 @@ const sumDigits = (num) => {
      sum += num % 10;
      num = Math.floor(num/10);
        }
-  return num;
+  return sum;
   };
 console.log(sumDigits(42));
 
-//Pythagoras
+// Pythagoras
+const calculateSide = (sideA, sideB) => {
+	  return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+}
+console.log(calculateSide(9,6))
 
 
 
