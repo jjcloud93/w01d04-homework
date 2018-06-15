@@ -7,20 +7,7 @@
 // debugging, while return pushes the value to the next code.
 
 //Palindrome
-
 const checkPalindrome = (string) => {
-	let data = string.length;
-for(i = 0; i < Math.floor(data/2); i++) {
-	if (string[i] !== string[data - 1 - i]) {
-		return false;
-	}
-}
-	return true;
-}
-console.log(checkPalindrome('radar'));
-
-
-const checkPalindrome2 = (string) => {
   let lowerCase = string.toLowerCase();
   let reverseString = lowerCase.split('').reverse('').join('');
   if (lowerCase === reverseString) {
@@ -29,7 +16,7 @@ const checkPalindrome2 = (string) => {
     return false;
   }
 }
-console.log(checkPalindrome2("Radar"));
+console.log(checkPalindrome("Radar"));
 
 //Digit Sum
 const sumDigits = (num) => {
@@ -50,46 +37,24 @@ const calculateSide = (sideA, sideB) => {
 console.log(calculateSide(9,6))
 
 // Sum Array
-
+const sumArray = (arr) => {
+  let total = 0;
+  for (i = 0; i < arr.length; i++) {
+    total += arr[i];
+  }    
+  return total;
+}
+console.log(sumArray([1, 2, 3, 4, 5, 6]))
 
 // Prime Numbers
+const checkPrime = () => {
+
+}
 
 // Insert Dash
+const insertDash = () => {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
