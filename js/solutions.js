@@ -49,7 +49,12 @@ const calculateSide = (sideA, sideB) => {
 }
 console.log(calculateSide(9,6))
 
+// Sum Array
 
+
+// Prime Numbers
+
+// Insert Dash
 
 
 
