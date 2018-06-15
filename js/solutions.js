@@ -47,14 +47,20 @@ const sumArray = (arr) => {
 console.log(sumArray([1, 2, 3, 4, 5, 6]))
 
 // Prime Numbers
-const checkPrime = () => {
-
+const checkPrime = (number) => {
+  for (i = 2; i < number; i++) {
+    if(number % i === 0){ 
+      return false;
+    }
+  else {
+    return true
+  }
 }
+};
+console.log(checkPrime(2))
 
 // Insert Dash
-const insertDash = () => {
-
-}
+// const insertDash = () => {}
 
 
 
