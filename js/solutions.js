@@ -60,8 +60,18 @@ const checkPrime = (number) => {
 console.log(checkPrime(2))
 
 // Insert Dash
-// const insertDash = () => {}
-
+const insertDash = (dash) => {
+  let dashstr = dash.toString('').split('')
+  for (i = 0; i < dashstr.length; i++){
+    if (dashstr[i]%2 == 0){
+      if (dashstr[i+2]%2 != 0){
+        dashstr.splice(i, 0, "-")
+      }
+    }
+  }
+return dashstr;
+}
+console.log(insertDash(454793));
 
 
 
